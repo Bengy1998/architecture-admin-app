@@ -14,4 +14,5 @@ class RedesSociales extends Model
         'icono',
     ];
 
+    
 }

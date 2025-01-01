@@ -5,9 +5,11 @@
 /public/storage
 /storage/*.key
 /storage/pail
+/public/images
 /vendor
 .env
 .lock
+composer.lock
 .env.backup
 .env.production
 .phpactor.json

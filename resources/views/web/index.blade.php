@@ -69,19 +69,17 @@
             </nav>
             <div class="menu-footer right-boxed">
                 <div class="social-list">
-                    <a href="#" class="icon ion-social-twitter"></a>
-                    <a href="#" class="icon ion-social-facebook"></a>
-                    <a href="#" class="icon ion-social-googleplus"></a>
-                    <a href="#" class="icon ion-social-linkedin"></a>
-                    <a href="#" class="icon ion-social-dribbble-outline"></a>
+                    @foreach ($redes_sociales as $item)
+                        <a href="{{ $item->link }}" class="{{ $item->icono }}"></a>
+                    @endforeach
                 </div>
                 <div class="copy">© Bauhaus 2019. All Rights Reseverd<br> Design by LoganCee</div>
             </div>
         </div>
 
         <!-- Navbar -->
-        
-        @include('web.header')
+
+        @include('web.header', ['redes_sociales' => $redes_sociales])
 
         <!-- Main Jumbotron -->
         <main id="main" class="jumbotron">
@@ -623,11 +621,9 @@
                             <div class="project-detail-meta">
                                 <span class="left text-dark hidden-xs pull-sm-left">Share:</span>
                                 <div class="social-list pull-sm-right">
-                                    <a href="" class="icon ion-social-twitter"></a>
-                                    <a href="" class="icon ion-social-facebook"></a>
-                                    <a href="" class="icon ion-social-googleplus"></a>
-                                    <a href="" class="icon ion-social-linkedin"></a>
-                                    <a href="" class="icon ion-social-dribbble-outline"></a>
+                                    @foreach ($redes_sociales as $item)
+                                        <a href="{{ $item->link }}" class="{{ $item->icono }}"></a>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -669,11 +665,9 @@
                             <div class="project-detail-meta">
                                 <span class="left text-dark hidden-xs pull-sm-left">Share:</span>
                                 <div class="social-list pull-sm-right">
-                                    <a href="" class="icon ion-social-twitter"></a>
-                                    <a href="" class="icon ion-social-facebook"></a>
-                                    <a href="" class="icon ion-social-googleplus"></a>
-                                    <a href="" class="icon ion-social-linkedin"></a>
-                                    <a href="" class="icon ion-social-dribbble-outline"></a>
+                                    @foreach ($redes_sociales as $item)
+                                        <a href="{{ $item->link }}" class="{{ $item->icono }}"></a>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -715,11 +709,9 @@
                             <div class="project-detail-meta">
                                 <span class="left text-dark hidden-xs pull-sm-left">Share:</span>
                                 <div class="social-list pull-sm-right">
-                                    <a href="" class="icon ion-social-twitter"></a>
-                                    <a href="" class="icon ion-social-facebook"></a>
-                                    <a href="" class="icon ion-social-googleplus"></a>
-                                    <a href="" class="icon ion-social-linkedin"></a>
-                                    <a href="" class="icon ion-social-dribbble-outline"></a>
+                                    @foreach ($redes_sociales as $item)
+                                        <a href="{{ $item->link }}" class="{{ $item->icono }}"></a>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -761,11 +753,9 @@
                             <div class="project-detail-meta">
                                 <span class="left text-dark hidden-xs pull-sm-left">Share:</span>
                                 <div class="social-list pull-sm-right">
-                                    <a href="" class="icon ion-social-twitter"></a>
-                                    <a href="" class="icon ion-social-facebook"></a>
-                                    <a href="" class="icon ion-social-googleplus"></a>
-                                    <a href="" class="icon ion-social-linkedin"></a>
-                                    <a href="" class="icon ion-social-dribbble-outline"></a>
+                                    @foreach ($redes_sociales as $item)
+                                        <a href="{{ $item->link }}" class="{{ $item->icono }}"></a>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -1268,11 +1258,9 @@
                 </div>
                 <div class="flex-item">
                     <div class="social-list pull-sm-right">
-                        <a href="" class="icon ion-social-twitter"></a>
-                        <a href="" class="icon ion-social-facebook"></a>
-                        <a href="" class="icon ion-social-googleplus"></a>
-                        <a href="" class="icon ion-social-linkedin"></a>
-                        <a href="" class="icon ion-social-dribbble-outline"></a>
+                        @foreach ($redes_sociales as $item)
+                            <a href="{{ $item->link }}" class="{{ $item->icono }}"></a>
+                        @endforeach
                     </div>
                 </div>
                 <div class="flex-item">
@@ -1297,7 +1285,7 @@
     <script src="/js/wow.min.js"></script>
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCwVuYiM-83l2IdjpT9uC0lg4jBm8-w4j8"></script>
+    <script src=""></script>
     <script src="/js/gmap.js"></script>
 
     <!-- Slider revolution -->

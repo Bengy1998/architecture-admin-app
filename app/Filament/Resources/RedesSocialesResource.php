@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Cache;
 use Filament\Notifications\Notification;
 use Illuminate\Validation\ValidationException;
 use App\Exceptions\MaxRedesSocialesException;
+use Filament\Pages\Actions;
 
 class RedesSocialesResource extends Resource
 {
     protected static ?string $model = RedesSociales::class;
-
+    protected static ?string $navigationLabel = 'Redes Sociales';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getLabel(): string
@@ -64,6 +65,21 @@ class RedesSocialesResource extends Resource
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+            ])->filters([
+                //
+            ])
+            ->actions([
+                Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->after(function () {
+                    Cache::forget('redes_sociales_list');
+                    Cache::forever('redes_sociales_list', RedesSociales::all());
+                })
+
+            ])
+            ->bulkActions([
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\DeleteBulkAction::make(),
+                ]),
             ]);
     }
 
@@ -81,25 +97,5 @@ class RedesSocialesResource extends Resource
             'create' => Pages\CreateRedesSociales::route('/create'),
             'edit' => Pages\EditRedesSociales::route('/{record}/edit'),
         ];
-    }
-
-    protected static function saved($record)
-    {
-        // Eliminar el caché de la lista de redes sociales
-        Cache::forget('redes_sociales_list');
-
-        // Guardar toda la lista de redes sociales en caché nuevamente, de manera indefinida
-        $redesSociales = RedesSociales::all(); // Obtener la lista completa de redes sociales
-        Cache::forever('redes_sociales_list', $redesSociales); // Guardar en caché de forma indefinida
-    }
-
-    protected static function deleted($record)
-    {
-        // Eliminar el caché de la lista de redes sociales
-        Cache::forget('redes_sociales_list');
-
-        // Guardar toda la lista de redes sociales en caché nuevamente, de manera indefinida
-        $redesSociales = RedesSociales::all(); // Obtener la lista completa de redes sociales
-        Cache::forever('redes_sociales_list', $redesSociales); // Guardar en caché de forma indefinida
     }
 }

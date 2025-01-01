@@ -5,7 +5,9 @@ namespace App\Filament\Resources\RedesSocialesResource\Pages;
 use App\Filament\Resources\RedesSocialesResource;
 use Filament\Resources\Pages\CreateRecord;
 use App\Exceptions\MaxRedesSocialesException;
+use App\Models\RedesSociales;
 use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Cache;
 
 class CreateRedesSociales extends CreateRecord
 {
@@ -26,5 +28,11 @@ class CreateRedesSociales extends CreateRecord
                 ->send();
             $this->halt();
         }
+    }
+
+    protected function beforeSave(): void
+    {
+        Cache::forget('redes_sociales_list');
+        Cache::forever('redes_sociales_list', RedesSociales::all());
     }
 }

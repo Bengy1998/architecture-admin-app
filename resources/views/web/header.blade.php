@@ -23,11 +23,9 @@
 
     <!-- Social -->
     <div class="social-list hidden-xs">
-        <a href="#" class="icon ion-social-twitter"></a>
-        <a href="#" class="icon ion-social-facebook"></a>
-        <a href="#" class="icon ion-social-googleplus"></a>
-        <a href="#" class="icon ion-social-linkedin"></a>
-        <a href="#" class="icon ion-social-dribbble-outline"></a>
+        @foreach ($redes_sociales as $item)
+            <a href="{{ $item->link }}" class="{{ $item->icono }}"></a>
+        @endforeach
     </div>
 
     <!-- Spacer -->
