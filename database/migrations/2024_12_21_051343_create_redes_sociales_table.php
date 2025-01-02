@@ -14,39 +14,35 @@ return new class extends Migration
     {
         Schema::create('redes_sociales', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
             $table->string('link');
             $table->string('icono');
+            $table->integer('orden')->default(0);
             $table->timestamps();
         });
 
         $redesSociales = [
             [
+                'nombre' => 'Facebook',
                 'link' => 'https://www.facebook.com/0110001001101abcdf',
                 'icono' => 'ion-social-facebook',
+                'orden'=> 1,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'link' => 'https://www.twitter.com/0110001001101abcdf',
-                'icono' => 'ion-social-twitter',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'link' => 'https://www.googleplus.com/0110001001101abcdf',
-                'icono' => 'ion-social-googleplus',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
+                'nombre' => 'Linkedin',
                 'link' => 'https://www.linkedin.com/0110001001101abcdf',
                 'icono' => 'ion-social-linkedin',
+                'orden' => 2,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
+                'nombre' => 'Outline',
                 'link' => 'https://www.dribbble.com/0110001001101abcdf',
                 'icono' => 'ion-social-dribbble-outline',
+                'orden' => 3,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

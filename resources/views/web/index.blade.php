@@ -39,19 +39,14 @@
 
         <!-- Sidebar Menu-->
         <div class="menu">
-            <span class="close-menu icon-cross right-boxed"></span>
-            <div class="menu-lang right-boxed">
-                <a href="" class="active">En</a>
-                <a href="">Fr</a>
-                <a href="">De</a>
-            </div>
+
             <nav class="nav mobile-menu">
                 <ul class="menu-list right-boxed">
                     <li>
-                        <a href="#main">Home</a>
+                        <a href="#main">Inicio</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about">Sobre Nosotros</a>
                     </li>
                     <li>
                         <a href="#projects">Projects</a>
@@ -1263,13 +1258,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="flex-item">
-                    <ul class="lang-list">
-                        <li class="active"><a href="">EN</a></li>
-                        <li><a href="">FR</a></li>
-                        <li><a href="">DE</a></li>
-                    </ul>
-                </div>
+
                 <div class="flex-item">
                     <div class="inline-block pull-sm-right">© Bauhaus 2019. All Rights Resevered</div>
                 </div>

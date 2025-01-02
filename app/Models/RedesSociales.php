@@ -10,9 +10,11 @@ class RedesSociales extends Model
     protected $table = 'redes_sociales';
 
     protected $fillable = [
+        'nombre',
         'link',
         'icono',
+        'orden'
     ];
 
-    
+
 }

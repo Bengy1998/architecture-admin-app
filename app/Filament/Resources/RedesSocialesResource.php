@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Cache;
 use Filament\Notifications\Notification;
 use Illuminate\Validation\ValidationException;
 use App\Exceptions\MaxRedesSocialesException;
+use App\Filament\Exports\RedesSocialesExporter;
+use Filament\Tables\Actions\ExportAction;
 use Filament\Pages\Actions;
+use Filament\Actions\Exports\Enums\ExportFormat;
 
 class RedesSocialesResource extends Resource
 {
@@ -40,6 +43,9 @@ class RedesSocialesResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\TextInput::make('nombre')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('link')
                     ->required()
                     ->maxLength(255),
@@ -53,6 +59,8 @@ class RedesSocialesResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('nombre')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('link')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('icono')
@@ -80,7 +88,14 @@ class RedesSocialesResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])->headerActions([
+                ExportAction::make()
+                    ->exporter(RedesSocialesExporter::class)
+                    ->formats([
+                        ExportFormat::Xlsx,
+                        ExportFormat::Csv,
+                    ])
+            ]) ->reorderable('orden');
     }
 
     public static function getRelations(): array
