@@ -66,10 +66,12 @@ class RedesSocialesResource extends Resource
                 Tables\Columns\TextColumn::make('icono')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
+
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Actualizado')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

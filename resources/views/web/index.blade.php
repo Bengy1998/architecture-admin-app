@@ -89,7 +89,7 @@
                             data-fsmasterspeed="1000">
 
                             <!-- Main image-->
-                            <img src="images/slider/slide1.jpg" data-bgparallax="5" alt=""
+                            <img src="images/slide1.jpg" data-bgparallax="5" alt=""
                                 data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 class="rev-slidebg">
 
@@ -186,7 +186,7 @@
                             data-fsmasterspeed="1000">
 
                             <!-- Main image-->
-                            <img src="images/slider/slide2.jpg" data-bgparallax="5" alt=""
+                            <img src="images/slide2.jpg" data-bgparallax="5" alt=""
                                 data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 class="rev-slidebg">
 
@@ -284,7 +284,7 @@
                             data-fsmasterspeed="1000">
 
                             <!-- Main image-->
-                            <img src="images/slider/slide3.jpg" data-bgparallax="5" alt=""
+                            <img src="images/slide3.jpg" data-bgparallax="5" alt=""
                                 data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat"
                                 class="rev-slidebg">
 
@@ -470,7 +470,7 @@
 
                     <!-- Project Carousel Item 1 -->
                     <a href="#project1" class="project-item item-shadow popup-with-zoom-anim building">
-                        <img alt="" class="img-responsive" src="images/projects/1-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/1-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">Triangle<br>Concrete House<br>On Lake</h3>
@@ -484,7 +484,7 @@
 
                     <!-- Project Carousel Item 2 -->
                     <a href="#project2" class="project-item item-shadow popup-with-zoom-anim building">
-                        <img alt="" class="img-responsive" src="images/projects/2-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/2-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">Rectangular<br>House Near<br>Italy</h3>
@@ -498,7 +498,7 @@
 
                     <!-- Project Carousel Item 3 -->
                     <a href="#project3" class="project-item item-shadow popup-with-zoom-anim building">
-                        <img alt="" class="img-responsive" src="images/projects/3-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/3-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">Milko<br>Co-Working<br>Building</h3>
@@ -512,7 +512,7 @@
 
                     <!-- Project Carousel Item 4 -->
                     <a href="#project4" class="project-item item-shadow popup-with-zoom-anim building">
-                        <img alt="" class="img-responsive" src="images/projects/4-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/4-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">Redesign<br>Interior For<br>Villa</h3>
@@ -526,7 +526,7 @@
 
                     <!-- Project Carousel Item 5 -->
                     <a href="#project5" class="project-item item-shadow popup-with-zoom-anim interior-exterior">
-                        <img alt="" class="img-responsive" src="images/projects/5-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/5-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">Wooden<br>Hozirontal<br>Villa</h3>
@@ -540,7 +540,7 @@
 
                     <!-- Project Carousel Item 6 -->
                     <a href="#project6" class="project-item item-shadow popup-with-zoom-anim interior-exterior">
-                        <img alt="" class="img-responsive" src="images/projects/6-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/6-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">Small<br>House Near<br>Wroclaw</h3>
@@ -554,7 +554,7 @@
 
                     <!-- Project Carousel Item 7 -->
                     <a href="#project7" class="project-item item-shadow popup-with-zoom-anim interior-exterior">
-                        <img alt="" class="img-responsive" src="images/projects/7-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/7-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">The luxury<br> residence in<br> forest</h3>
@@ -568,7 +568,7 @@
 
                     <!-- Project Carousel Item 8 -->
                     <a href="#project8" class="project-item item-shadow popup-with-zoom-anim interior-exterior">
-                        <img alt="" class="img-responsive" src="images/projects/8-426x574.jpg">
+                        <img alt="" class="img-responsive" src="images/8-426x574.jpg">
                         <div class="project-hover">
                             <div class="project-hover-content">
                                 <h3 class="project-title">Cubic<br>Inter Mesuem<br>In Rome</h3>
@@ -585,7 +585,7 @@
                 <div id="project1" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/1-680x680.jpg"></div>
+                                src="images/1-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">Triangle Concrete House On Lake</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -629,7 +629,7 @@
                 <div id="project2" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/2-680x680.jpg"></div>
+                                src="images/2-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">Rectangular House Near Italy</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -673,7 +673,7 @@
                 <div id="project3" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/3-680x680.jpg"></div>
+                                src="images/3-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">Milko Co-Working Building</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -717,7 +717,7 @@
                 <div id="project4" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/4-680x680.jpg"></div>
+                                src="images/4-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">Redesign Interior For Villa</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -761,7 +761,7 @@
                 <div id="project5" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/5-680x680.jpg"></div>
+                                src="images/5-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">Wooden Hozirontal Villa</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -807,7 +807,7 @@
                 <div id="project6" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/6-680x680.jpg"></div>
+                                src="images/6-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">Small House Near Wroclaw</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -853,7 +853,7 @@
                 <div id="project7" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/7-680x680.jpg"></div>
+                                src="images/7-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">The Luxury Residence In Forest</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -899,7 +899,7 @@
                 <div id="project8" class="container zoom-anim-dialog mfp-hide">
                     <div class="row">
                         <div class="col-lg-8"><img alt="" class="project-detail-img"
-                                src="images/projects/8-680x680.jpg"></div>
+                                src="images/8-680x680.jpg"></div>
                         <div class="col-lg-4">
                             <h3 class="project-detail-title">Cubic Inter Mesuem In Rome</h3>
                             <p class="project-detail-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -948,9 +948,9 @@
                     <h2 class="section-title">From Great Our Clients</h2>
                     <div class="client-carousel owl-carousel">
                         <div class="client-carousel-item">
-                            <img alt="" class="client-img" src="images/clients/1-92x92.jpg">
+                            <img alt="" class="client-img" src="images/1-92x92.jpg">
                             <div class="client-box">
-                                <img alt="" class="image-quote" src="images/image-icons/icon-quote.png">
+                                <img alt="" class="image-quote" src="images/icon-quote.png">
                                 <div class="client-title">
                                     <span class="client-name">Adam Stone</span>
                                     <span class="client-company">/ CEO at Google INC</span>
@@ -961,9 +961,9 @@
                             </div>
                         </div>
                         <div class="client-carousel-item">
-                            <img alt="" class="client-img" src="images/clients/2-92x92.jpg">
+                            <img alt="" class="client-img" src="images/2-92x92.jpg">
                             <div class="client-box">
-                                <img alt="" class="image-quote" src="images/image-icons/icon-quote.png">
+                                <img alt="" class="image-quote" src="images/icon-quote.png">
                                 <div class="client-title">
                                     <span class="client-name">Anabella Kleva </span>
                                     <span class="client-company">/ Managerment at Envato</span>
@@ -974,9 +974,9 @@
                             </div>
                         </div>
                         <div class="client-carousel-item">
-                            <img alt="" class="client-img" src="images/clients/1-92x92.jpg">
+                            <img alt="" class="client-img" src="images/1-92x92.jpg">
                             <div class="client-box">
-                                <img alt="" class="image-quote" src="images/image-icons/icon-quote.png">
+                                <img alt="" class="image-quote" src="images/icon-quote.png">
                                 <div class="client-title">
                                     <span class="client-name">Adam Stone</span>
                                     <span class="client-company">/ CEO at Google INC</span>
@@ -987,9 +987,9 @@
                             </div>
                         </div>
                         <div class="client-carousel-item">
-                            <img alt="" class="client-img" src="images/clients/2-92x92.jpg">
+                            <img alt="" class="client-img" src="images/2-92x92.jpg">
                             <div class="client-box">
-                                <img alt="" class="image-quote" src="images/image-icons/icon-quote.png">
+                                <img alt="" class="image-quote" src="images/icon-quote.png">
                                 <div class="client-title">
                                     <span class="client-name">Adam Stone</span>
                                     <span class="client-company">/ CEO at Google INC</span>
@@ -1002,34 +1002,34 @@
                     </div>
                     <div class="partner-carousel owl-carousel">
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/1.png">
+                            <img alt="" src="images/1.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/2.png">
+                            <img alt="" src="images/2.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/3.png">
+                            <img alt="" src="images/3.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/4.png">
+                            <img alt="" src="images/4.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/5.png">
+                            <img alt="" src="images/5.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/1.png">
+                            <img alt="" src="images/1.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/2.png">
+                            <img alt="" src="images/2.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/3.png">
+                            <img alt="" src="images/3.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/4.png">
+                            <img alt="" src="images/4.png">
                         </div>
                         <div class="partner-carousel-item">
-                            <img alt="" src="images/partners/5.png">
+                            <img alt="" src="images/5.png">
                         </div>
                     </div>
                 </div>
@@ -1049,7 +1049,7 @@
                             <div class="row-team row">
                                 <div class="col-team col-xs-6 col-md-4 wow fadeIn">
                                     <div class="team-profile">
-                                        <img alt="" src="images/team/1-270x270.jpg">
+                                        <img alt="" src="images/1-270x270.jpg">
                                         <div class="team-hover">
                                             <div class="team-content">
                                                 <div class="team-name">
@@ -1067,7 +1067,7 @@
                                 </div>
                                 <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="team-profile">
-                                        <img alt="" src="images/team/2-270x270.jpg">
+                                        <img alt="" src="images/2-270x270.jpg">
                                         <div class="team-hover">
                                             <div class="team-content">
                                                 <div class="team-name">
@@ -1085,7 +1085,7 @@
                                 </div>
                                 <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.6s">
                                     <div class="team-profile">
-                                        <img alt="" src="images/team/3-270x270.jpg">
+                                        <img alt="" src="images/3-270x270.jpg">
                                         <div class="team-hover">
                                             <div class="team-content">
                                                 <div class="team-name">
@@ -1103,7 +1103,7 @@
                                 </div>
                                 <div class="col-team col-xs-6 col-md-4 wow fadeIn">
                                     <div class="team-profile">
-                                        <img alt="" src="images/team/4-270x270.jpg">
+                                        <img alt="" src="images/4-270x270.jpg">
                                         <div class="team-hover">
                                             <div class="team-content">
                                                 <div class="team-name">
@@ -1121,7 +1121,7 @@
                                 </div>
                                 <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="team-profile">
-                                        <img alt="" src="images/team/5-270x270.jpg">
+                                        <img alt="" src="images/5-270x270.jpg">
                                         <div class="team-hover">
                                             <div class="team-content">
                                                 <div class="team-name">
