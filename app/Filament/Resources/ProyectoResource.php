@@ -23,14 +23,6 @@ class ProyectoResource extends Resource
                 Forms\Components\TextInput::make('titulo')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\FileUpload::make('imagen_presentacion')
-                    ->label('Imagen de Presentación')
-                    ->image()
-                    ->directory('proyectos/imagenes_presentacion'),
-                Forms\Components\FileUpload::make('imagen_slider')
-                    ->label('Imagen del Slider')
-                    ->image()
-                    ->directory('proyectos/imagenes_slider'),
                 Forms\Components\TextInput::make('titulo_slider')
                     ->maxLength(255),
                 Forms\Components\Textarea::make('descripcion')
@@ -46,10 +38,27 @@ class ProyectoResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('presupuesto')
                     ->numeric(),
-                Forms\Components\FileUpload::make('imagen_detalle')
-                    ->label('Imagen de Detalle')
-                    ->image()
-                    ->directory('proyectos/imagenes_detalle'),
+                Forms\Components\Toggle::make('es_slider') // Nuevo campo
+                    ->label('¿Es Slider?')
+                    ->default(false)->inline(false),
+                // Salto de línea antes de las imágenes
+                Forms\Components\Section::make('Imágenes')
+                    ->schema([
+                        Forms\Components\FileUpload::make('imagen_slider')
+                            ->label('Imagen del Slider')
+                            ->image()
+                            ->directory('proyectos/imagenes_slider'),
+                        Forms\Components\FileUpload::make('imagen_presentacion')
+                            ->label('Imagen de Presentación')
+                            ->image()
+                            ->directory('proyectos/imagenes_presentacion'),
+
+                        Forms\Components\FileUpload::make('imagen_detalle')
+                            ->label('Imagen de Detalle')
+                            ->image()
+                            ->directory('proyectos/imagenes_detalle'),
+                    ])
+                    ->collapsible(),
             ]);
     }
 
@@ -99,7 +108,7 @@ class ProyectoResource extends Resource
     public static function getRelations(): array
     {
         return [
-          //  RelationManagers\TipoProyectoRelationManager::class,
+            // RelationManagers\TipoProyectoRelationManager::class,
         ];
     }
 

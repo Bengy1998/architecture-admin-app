@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('nombre_arquitecto')->nullable();
             $table->decimal('presupuesto', 15, 2)->nullable();
             $table->text('imagen_detalle')->nullable();
+            $table->boolean('es_slider')->default(false); // Nuevo campo
             $table->timestamps();
 
             // Relación con la tabla tipo_proyectos

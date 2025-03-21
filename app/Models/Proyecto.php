@@ -23,6 +23,7 @@ class Proyecto extends Model
         'nombre_arquitecto',
         'presupuesto',
         'imagen_detalle',
+        'es_slider', // Nuevo campo
     ];
 
     /**
