@@ -63,7 +63,7 @@
                         data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="chars"
                         data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05"
                         style="font-weight:600; letter-spacing:-0.05em;">
-                        {!! $item->titulo !!}
+                        {!! $item->titulo_slider !!}
                     </div>
 
                     <!-- Layer 6 -->

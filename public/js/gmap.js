@@ -38,7 +38,7 @@ function initialize() {
     + '      <span class="text"><strong class="text-dark">Email:</strong> info@bauhaus.co</span>'
     + '   </span>'
     + '</div>' 
-    + '<p class="gmap-open"><a href="https://www.google.com/maps/@-37.824812,144.965981,14z?hl=ru-RU" target="_blank">Open on Google Maps</a></p></div>';
+    + '<p class="gmap-open"><a href="https://www.google.com/maps/place/San+Miguel+15088/@-12.062218,-77.0949581,17z/data=!3m1!4b1!4m6!3m5!1s0x9105c95cc1e3c365:0x538233dea3ff010c!8m2!3d-12.0622233!4d-77.0923832!16s%2Fg%2F11hdnh566r?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">Open on Google Maps</a></p></div>';
     
     
     var infowindow = new google.maps.InfoWindow({

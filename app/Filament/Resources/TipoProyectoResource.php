@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Cache;
 
 class TipoProyectoResource extends Resource
 {
@@ -66,6 +67,10 @@ class TipoProyectoResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->after(function () {
+                    Cache::forget('tipo_proyecto_list');
+                    Cache::forever('tipo_proyecto_list', TipoProyecto::all());
+                })
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

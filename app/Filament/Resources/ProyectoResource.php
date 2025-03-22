@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Cache;
 
 class ProyectoResource extends Resource
 {
@@ -61,7 +62,7 @@ class ProyectoResource extends Resource
                     ->collapsible(),
             ]);
     }
-
+//
     public static function table(Table $table): Table
     {
         return $table
@@ -97,6 +98,10 @@ class ProyectoResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->after(function () {
+                    Cache::forget('proyectos_list');
+                    Cache::forever('proyectos_list', Proyecto::with('tipoProyecto')->get());
+                })
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

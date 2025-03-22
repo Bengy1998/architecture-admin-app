@@ -35,22 +35,22 @@
     <nav class="nav navigation visible-lg">
         <ul>
             <li>
-                <a href="#main">Home</a>
+                <a href="#main">Inicio</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="#about">Sobre Nosotros</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Proyectos</a>
             </li>
             <li>
-                <a href="#clients">Clients</a>
+                <a href="#clients">Clientes</a>
             </li>
             <li>
-                <a href="#team">Team</a>
+                <a href="#team">Equipo</a>
             </li>
             <li>
-                <a href="#contacts">Contacts</a>
+                <a href="#contacts">Contactanos</a>
             </li>
         </ul>
     </nav>
