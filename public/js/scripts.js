@@ -4,12 +4,12 @@
 
 
   	/*-------------------------------------------------------------------------------
-	  Detect mobile device 
+	  Detect mobile device
 	-------------------------------------------------------------------------------*/
 
 
-	
-	var mobileDevice = false; 
+
+	var mobileDevice = false;
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	  	$('html').addClass('mobile');
@@ -47,7 +47,7 @@
 
 		if ($('.wow').length > 0) {
 			var wow = new WOW({
-			    offset: 150,          
+			    offset: 150,
 			    mobile: false
 			  }
 			);
@@ -59,7 +59,7 @@
 
 
 	/*-------------------------------------------------------------------------------
-	  Navbar 
+	  Navbar
 	-------------------------------------------------------------------------------*/
 
 
@@ -83,7 +83,7 @@
 
 	$('.js-navbar').on('affixed-top.bs.affix', function() {
 	  	$('.js-navbar').removeClass('animated slideInDown');
-	  	
+
 	});
 
 
@@ -96,7 +96,7 @@
         var target = $(this.hash);
         if (target.length) {
             $('html,body').animate({
-                scrollTop: (target.offset().top - $('.js-navbar').outerHeight() + 1) 
+                scrollTop: (target.offset().top - $('.js-navbar').outerHeight() + 1)
             }, 1000);
             $('body').removeClass('menu-is-opened').addClass('menu-is-closed');
             return false;
@@ -127,7 +127,7 @@
 	function showMenu(){
 		$('body').removeClass('menu-is-closed').addClass('menu-is-opened');
 	}
-	
+
 	$('.navbar-toggle').on('click',function(){
 		showMenu();
 	});
@@ -214,7 +214,7 @@
 		/* Partner Carousel */
 
 
-		  
+
 	   $('.partner-carousel').owlCarousel({
 		    margin:30,
 		    smartSpeed:250,
@@ -250,7 +250,7 @@
 		        },
 		        720:{
 		            items:1,
-		            
+
 		        },
 		        1280:{
 		            items:1
@@ -268,7 +268,7 @@
 
 
     /*-------------------------------------------------------------------------------
-	  Filter Project Carousel 
+	  Filter Project Carousel
 	-------------------------------------------------------------------------------*/
 
 
@@ -309,7 +309,7 @@
 
 
 	/*-------------------------------------------------------------------------------
-	  Page Piling - Full Screen Sections 
+	  Page Piling - Full Screen Sections
 	-------------------------------------------------------------------------------*/
 
 
@@ -327,7 +327,7 @@
 		    menu: '.menu-pagepiling',
 		    anchors: ['main', 'about', 'projects', 'partners', 'testimonials', 'contacts'],
 		    afterLoad: function(anchorLink, index){
-		    	if ($('.pp-scrollable:nth-child(' + (index) + ')').hasClass(('section-white'))){ 
+		    	if ($('.pp-scrollable:nth-child(' + (index) + ')').hasClass(('section-white'))){
 		            $('.navbar').removeClass('navbar-white');
 		            $('#pp-nav').removeClass('white');
 		            $('.copy-bottom').removeClass('white');
@@ -339,7 +339,7 @@
 	            	$('.copy-bottom').addClass('white');
 		            $('.lang-bottom').addClass('white');
 	            }
-	            
+
   			}
 		});
 
@@ -348,11 +348,11 @@
 
 
 
-		
-			$('.menu-pagepiling ul li a').on('click', function() { 
+
+			$('.menu-pagepiling ul li a').on('click', function() {
 		   	   hideMenu();
-		    });	
-		
+		    });
+
 
 
 
@@ -386,7 +386,7 @@
 		$('.pp-nav-down').on('click', function(){
 			$.fn.pagepiling.moveSectionDown();
 		});
-	} 
+	}
 
 
 
@@ -408,27 +408,5 @@
 	-------------------------------------------------------------------------------*/
 
 
-
-	if ($('.js-form').length > 0) {
-		$('.js-form').each(function(){
-			$(this).validate({
-				errorClass: 'error wobble-error',
-			    submitHandler: function(form){
-		        	$.ajax({
-			            type: "POST",
-			            url:"mail.php",
-			            data: $(form).serialize(),
-			            success: function() {
-		                	$('.success-message').show();
-		                },
-
-		                error: function(){
-			                $('.error-message').show();
-			            }
-			        });
-			    }
-			});
-		});
-	}
 
 })(jQuery);

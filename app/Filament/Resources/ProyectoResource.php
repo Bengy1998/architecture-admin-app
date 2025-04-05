@@ -125,4 +125,5 @@ class ProyectoResource extends Resource
             'edit' => Pages\EditProyecto::route('/{record}/edit'),
         ];
     }
+
 }

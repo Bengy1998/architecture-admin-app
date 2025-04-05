@@ -10,8 +10,7 @@
     </a>
 
     <!-- Phone -->
-    <address class="navbar-address visible-md visible-xl">call us: <span class="text-dark">(+080) 9684 32 45
-            789</span></address>
+    <address class="navbar-address visible-md visible-xl">Llámanos: <span class="text-dark">{{ $configuracion->telefono }}</span></address>
 
     <!-- Button -->
     <button type="button" class="navbar-toggle hidden-lg" data-toggle="collapse" data-target="#navbar-collapse"
@@ -42,12 +41,6 @@
             </li>
             <li>
                 <a href="#projects">Proyectos</a>
-            </li>
-            <li>
-                <a href="#clients">Clientes</a>
-            </li>
-            <li>
-                <a href="#team">Equipo</a>
             </li>
             <li>
                 <a href="#contacts">Contactanos</a>
